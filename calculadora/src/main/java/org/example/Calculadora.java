@@ -24,19 +24,19 @@ public class Calculadora {
     }
 
     public int soma(){
-        return getValor1() + getValor2();
+        return valor1 + valor2;
     }
 
     public int subtracao(){
-        return getValor1() - getValor2();
+        return valor1() - valor2();
     }
 
     public int multiplicacao(){
-        return getValor1() * getValor2();
+        return valor1 * valor2;
     }
 
     public float divisao(){
-        return (float) getValor1() / getValor2();
+        return (float) valor1() / valor2();
     }
 
     public void limparDados(){

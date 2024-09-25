@@ -4,7 +4,7 @@ package org.example;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Calculadora minhaCalculadora = new Calculadora(5, 7);
+        Calculadora minhaCalculadora = new Calculadora();
 
         System.out.println(minhaCalculadora.soma());
         System.out.println(minhaCalculadora.subtracao());
