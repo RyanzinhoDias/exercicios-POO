@@ -5,13 +5,21 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
         Calculadora minhaCalculadora = new Calculadora();
+        Memoria minhaMemoria = new Memoria();
 
-        System.out.println(minhaCalculadora.soma());
-        System.out.println(minhaCalculadora.subtracao());
-        System.out.println(minhaCalculadora.multiplicacao());
-        System.out.println(minhaCalculadora.divisao());
-        System.out.println(minhaCalculadora.getValor1() + " - " + minhaCalculadora.getValor2());
-        minhaCalculadora.limparDados();
-        System.out.println(minhaCalculadora.getValor1() + " - " + minhaCalculadora.getValor2());
+        minhaMemoria.armazenarMemoria(minhaCalculadora.soma(9,1));
+        minhaMemoria.armazenarMemoria(minhaCalculadora.subtracao(15,9));
+        minhaMemoria.armazenarMemoria(minhaCalculadora.multiplicacao(65,4));
+        minhaMemoria.armazenarMemoria(minhaCalculadora.divisao(98, 3));
+        minhaMemoria.armazenarMemoria(minhaCalculadora.quociente(7,3));
+        minhaMemoria.armazenarMemoria(minhaCalculadora.resto(7,3));
+
+        System.out.println("Antes de limpar dados da memória:");
+        minhaMemoria.exibirRegistrosMemoria();
+
+        minhaMemoria.limparDados();
+        System.out.println("Após limpar dados de memória:");
+        minhaMemoria.exibirRegistrosMemoria();
+        minhaMemoria.limparDados();
     }
 }
