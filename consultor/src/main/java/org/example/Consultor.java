@@ -10,6 +10,8 @@ public class Consultor extends Funcionario{
         return (float) (super.getSalario()*0.1) + super.getSalario();
     }
 
-    
+    public float getSalario(float percentual){
+        return (float) (super.getSalario()*(percentual/100)) + super.getSalario();
+    }
 
 }

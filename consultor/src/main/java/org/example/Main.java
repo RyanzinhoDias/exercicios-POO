@@ -5,7 +5,8 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
         Consultor consultor = new Consultor("0000", "Teste", 1000);
-        System.out.println(consultor.getSalario());
+
+        System.out.println(consultor.getSalario(10));
 
     }
 }
